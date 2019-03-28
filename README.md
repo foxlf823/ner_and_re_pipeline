@@ -12,6 +12,7 @@ Main Requirements
 Models
 -----
 Entity Recognition: BiLSTM-CRF
+
 Relation Extraction: BiLSTM-Attention
 
 Usage
