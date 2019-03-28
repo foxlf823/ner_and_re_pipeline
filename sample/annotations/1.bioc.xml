@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<collection>
+  <source></source>
+  <date></date>
+  <key></key>
+  <document>
+    <id>1</id>
+    <passage>
+      <offset>0</offset>
+      <annotation id="1">
+        <infon key="type">Location</infon>
+        <location length="7" offset="0"/>
+        <text>Beijing</text>
+      </annotation>
+      <annotation id="2">
+        <infon key="type">Location</infon>
+        <location length="5" offset="26"/>
+        <text>China</text>
+      </annotation>
+      <relation id="1">
+        <infon key="type">located</infon>
+        <node refid="1" role="argument 1"/>
+        <node refid="2" role="argument 2"/>
+      </relation>
+    </passage>
+  </document>
+</collection>
