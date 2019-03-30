@@ -12,5 +12,10 @@ parser.add_argument('-verbose', action='store_true', help='add this flag to prin
 parser.add_argument('-gpu', type=int, default=0, help='use which gpu for whattodo 1 (default=0)')
 parser.add_argument('-old_gpu', type=int, default=0, help='use which gpu for whattodo 2 (default=0)')
 
+parser.add_argument('-train_dir', default='./sample', help='training data (default=./sample)')
+parser.add_argument('-dev_dir', default='./sample', help='development data (default=./sample)')
+parser.add_argument('-test_dir', default='./sample', help='test data (default=./sample)')
+parser.add_argument('-word_emb_file', default='', help='pre-trained word embedding file')
+
 opt = parser.parse_args()
 

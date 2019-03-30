@@ -389,23 +389,17 @@ class Data:
 
         self.pretrain_word_embedding = None
 
-    def read_config(self,config_file):
+    def read_config(self,config_file, opt):
         config = config_file_to_dict(config_file)
         ## read data:
-        the_item = 'train_dir'
-        if the_item in config:
-            self.train_dir = config[the_item]
-        the_item = 'dev_dir'
-        if the_item in config:
-            self.dev_dir = config[the_item]
-        the_item = 'test_dir'
-        if the_item in config:
-            self.test_dir = config[the_item]
 
+        self.train_dir = opt.train_dir
 
-        the_item = 'word_emb_dir'
-        if the_item in config:
-            self.word_emb_dir = config[the_item]
+        self.dev_dir = opt.dev_dir
+
+        self.test_dir = opt.test_dir
+
+        self.word_emb_dir = opt.word_emb_file
 
         the_item = 'MAX_SENTENCE_LENGTH'
         if the_item in config:
@@ -554,4 +548,4 @@ def str2bool(string):
 
 
 data = Data()
-data.read_config(opt.config)
+data.read_config(opt.config, opt)
