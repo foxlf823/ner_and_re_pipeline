@@ -20,7 +20,7 @@ else:
 logging.info(opt)
 
 if opt.whattodo==1:
-
+    logging.info(data.train_dir)
     train_token, train_entity, train_relation, train_name = preprocess.preprocess(data.train_dir)
     dev_token, dev_entity, dev_relation, dev_name = preprocess.preprocess(data.dev_dir)
     # test_token, test_entity, test_relation, test_name = preprocess.preprocess(data.test_dir)
