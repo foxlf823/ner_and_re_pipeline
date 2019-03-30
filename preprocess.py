@@ -4,7 +4,8 @@ from os.path import isfile, join
 import pandas as pd
 import bioc
 import nltk
-nltk.download('punkt')
+# nltk.download('punkt')
+# nltk.download('averaged_perceptron_tagger')
 sent_tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
 import logging
 import my_utils
