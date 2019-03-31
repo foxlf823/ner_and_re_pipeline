@@ -15,7 +15,8 @@ import codecs
 def preprocess(basedir):
     annotation_dir = join(basedir, 'annotations')
     corpus_dir = join(basedir, 'corpus')
-    annotation_files = [f for f in listdir(annotation_dir) if isfile(join(annotation_dir,f))]
+
+    annotation_files = [f for f in listdir(annotation_dir) if isfile(join(annotation_dir,f)) and f[0]!='.']
     # corpus_files = [f for f in listdir(corpus_dir) if isfile(join(corpus_dir,f))]
 
     df_all_doc = []

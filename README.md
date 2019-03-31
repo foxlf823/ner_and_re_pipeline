@@ -20,14 +20,14 @@ Usage
 1. Train the pipeline
 
   ```
-  python main.py -whattodo 1 -config default.config -output ./output
+  python main.py -whattodo 1 -config default.config -output ./output -train_dir ./sample -dev_dir ./sample
   ```
 
   * whattodo=1: train ner and re models
   * config: configuration file
   * output: directory of saved models
-
-  The paths of training and development datasets are set in the configuration file.
+  * train_dir: directory of training data
+  * dev_dir: directory of development data
 
 2. Extracting entities and relations using existing models
 
@@ -44,13 +44,15 @@ Usage
 3. Retraining the pipeline based on existing models
 
   ```
-  python main.py -whattodo 1 -config default.config -output ./output -pretrained_model_dir ./pretrained
+  python main.py -whattodo 1 -config default.config -output ./output -pretrained_model_dir ./pretrained -train_dir ./sample -dev_dir ./sample
   ```
 
   * whattodo=1: train ner and re models
   * config: configuration file
   * output: directory of saved models
   * pretrained_model_dir: directory of pretrained models, which are the models trained in Usage 1.
+  * train_dir: directory of training data
+  * dev_dir: directory of development data
 
 Acknowledgement
 -----

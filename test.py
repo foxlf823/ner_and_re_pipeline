@@ -170,7 +170,7 @@ def predict(opt, data):
         cuda_dst = 'cuda:{}'.format(opt.gpu)
         classify_wordseq.load_state_dict(torch.load(os.path.join(opt.output, 're_wordseq.pkl'), map_location={cuda_src:cuda_dst}))
 
-    input_files = [f for f in listdir(opt.input) if isfile(join(opt.input,f))]
+    input_files = [f for f in listdir(opt.input) if isfile(join(opt.input,f)) and f[0]!='.']
 
 
     # for idx in tqdm(range(len(input_files))):
