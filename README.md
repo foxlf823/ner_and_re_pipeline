@@ -58,6 +58,25 @@ Acknowledgement
 -----
 If you found the code is helpful, please cite:
 ```
+@Article{info:doi/10.2196/12159,
+author="Li, Fei and Liu, Weisong and Yu, Hong",
+title="Extraction of Information Related to Adverse Drug Events from Electronic Health Record Notes: Design of an End-to-End Model Based on Deep Learning",
+journal="JMIR Med Inform",
+year="2018",
+month="Nov",
+day="26",
+volume="6",
+number="4",
+pages="e12159",
+issn="2291-9694",
+doi="10.2196/12159",
+url="http://medinform.jmir.org/2018/4/e12159/",
+}
+```
+
+or
+
+```
 @article{li2017neural,
   title={A neural joint model for entity and relation extraction from biomedical text},
   author={Li, Fei and Zhang, Meishan and Fu, Guohong and Ji, Donghong},
